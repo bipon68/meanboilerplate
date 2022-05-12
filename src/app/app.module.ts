@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 // import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProfileComponent } from './profile/profile.component';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
-  declarations: [			
+  declarations: [				
     AppComponent,
       LoginComponent,
-      ProfileComponent
+      ProfileComponent,
+      SettingsComponent
    ],
   imports: [
     BrowserModule,
