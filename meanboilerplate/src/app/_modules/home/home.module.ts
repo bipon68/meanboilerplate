@@ -1,3 +1,4 @@
+import { SharedModule } from './../../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
@@ -16,7 +17,8 @@ const approutes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(approutes)
+    RouterModule.forChild(approutes),
+    SharedModule
   ],
   declarations: [HomeComponent, DashboardComponent]
 })
