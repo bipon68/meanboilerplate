@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "meanboilerplate": {
+    "html-to-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/meanboilerplate",
+            "outputPath": "dist/html-to-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "meanboilerplate:build"
+            "browserTarget": "html-to-angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "meanboilerplate:build:production"
+              "browserTarget": "html-to-angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "meanboilerplate:build"
+            "browserTarget": "html-to-angular:build"
           }
         },
         "test": {
@@ -110,19 +110,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "meanboilerplate:serve"
+            "devServerTarget": "html-to-angular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "meanboilerplate:serve:production"
+              "devServerTarget": "html-to-angular:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "meanboilerplate",
+  "defaultProject": "html-to-angular",
   "cli": {
-    "analytics": "009a61af-b32e-4e53-9527-e0a137c2920e"
+    "analytics": "ed3cd846-18ac-4631-902c-570f7bcc2643"
   }
 }
