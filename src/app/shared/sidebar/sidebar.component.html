@@ -1,48 +1,237 @@
-  <!-- Sidebar menu-->
-  <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
-  <aside class="app-sidebar">
-    <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image">
-      <div>
-        <p class="app-sidebar__user-name">John Doe</p>
-        <p class="app-sidebar__user-designation">Frontend Developer</p>
-      </div>
-    </div>
-    <ul class="app-menu">
-      <li><a class="app-menu__item active" href="dashboard" routerLink="dashboard"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
-      <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">UI Elements</span><i class="treeview-indicator fa fa-angle-right"></i></a>
-        <ul class="treeview-menu">
-          <li><a class="treeview-item" href="bootstrap" routerLink="bootstrap"><i class="icon fa fa-circle-o"></i> Bootstrap Elements</a></li>
-          <li><a class="treeview-item" href="https://fontawesome.com/v4.7.0/icons/" target="_blank" rel="noopener"><i class="icon fa fa-circle-o"></i> Font Icons</a></li>
-          <li><a class="treeview-item" href="ui-cards" routerLink="ui-cards"><i class="icon fa fa-circle-o"></i> Cards</a></li>
-          <li><a class="treeview-item" href="widgets" routerLink="widgets"><i class="icon fa fa-circle-o"></i> Widgets</a></li>
-        </ul>
+<!-- Sidebar -->
+<nav class="navbar-vertical navbar">
+  <div class="nav-scroller">
+    <!-- Brand logo -->
+    <a class="navbar-brand" href="index.html">
+      <img src="assets/images/brand/logo/logo.svg" alt="" />
+    </a>
+    <!-- Navbar nav -->
+    <ul class="navbar-nav flex-column" id="sideNavbar">
+      <li class="nav-item">
+        <a class="nav-link has-arrow active" href="index.html">
+          <i data-feather="home" class="nav-icon icon-xs me-2"></i> Dashboard
+        </a>
       </li>
-      <li><a class="app-menu__item" href="charts" routerLink="charts"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Charts</span></a></li>
-      <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-edit"></i><span class="app-menu__label">Forms</span><i class="treeview-indicator fa fa-angle-right"></i></a>
-        <ul class="treeview-menu">
-          <li><a class="treeview-item" href="forms" routerLink="forms"><i class="icon fa fa-circle-o"></i> Form Components</a></li>
-          <li><a class="treeview-item" href="form-custom" routerLink="form-custom"><i class="icon fa fa-circle-o"></i> Custom Components</a></li>
-          <li><a class="treeview-item" href="form-samples" routerLink="form-samples"><i class="icon fa fa-circle-o"></i> Form Samples</a></li>
-          <li><a class="treeview-item" href="form-notifications" routerLink="form-notifications"><i class="icon fa fa-circle-o"></i> Form Notifications</a></li>
-        </ul>
+
+      <!-- Nav item -->
+      <li class="nav-item">
+        <div class="navbar-heading">Layouts & Pages</div>
       </li>
-      <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">Tables</span><i class="treeview-indicator fa fa-angle-right"></i></a>
-        <ul class="treeview-menu">
-          <li><a class="treeview-item" href="basic-table" routerLink="basic-table"><i class="icon fa fa-circle-o"></i> Basic Tables</a></li>
-          <li><a class="treeview-item" href="data-table" routerLink="data-table"><i class="icon fa fa-circle-o"></i> Data Tables</a></li>
-        </ul>
+
+      <!-- Nav item -->
+      <li class="nav-item">
+        <a
+          class="nav-link has-arrow collapsed"
+          href="#!"
+          data-bs-toggle="collapse"
+          data-bs-target="#navPages"
+          aria-expanded="false"
+          aria-controls="navPages"
+        >
+          <i data-feather="layers" class="nav-icon icon-xs me-2"> </i> Pages
+        </a>
+
+        <div id="navPages" class="collapse" data-bs-parent="#sideNavbar">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" 
+                href="profile" 
+                routerLink="profile">
+                Profile
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link has-arrow"
+                href="settings"
+                routerLink="settings"
+              >
+                Settings
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="billing" routerLink="billing">
+                Billing
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="pages/pricing.html">
+                Pricing
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/404-error.html">
+                404 Error
+              </a>
+            </li>
+          </ul>
+        </div>
       </li>
-      <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">Pages</span><i class="treeview-indicator fa fa-angle-right"></i></a>
-        <ul class="treeview-menu">
-          <li><a class="treeview-item" href="blank-page.html"><i class="icon fa fa-circle-o"></i> Blank Page</a></li>
-          <li><a class="treeview-item" href="login" routerLink="login"><i class="icon fa fa-circle-o"></i> Login Page</a></li>
-          <li><a class="treeview-item" href="page-lockscreen.html"><i class="icon fa fa-circle-o"></i> Lockscreen Page</a></li>
-          <li><a class="treeview-item" href="page-user.html"><i class="icon fa fa-circle-o"></i> User Page</a></li>
-          <li><a class="treeview-item" href="page-invoice.html"><i class="icon fa fa-circle-o"></i> Invoice Page</a></li>
-          <li><a class="treeview-item" href="page-calendar.html"><i class="icon fa fa-circle-o"></i> Calendar Page</a></li>
-          <li><a class="treeview-item" href="page-mailbox.html"><i class="icon fa fa-circle-o"></i> Mailbox</a></li>
-          <li><a class="treeview-item" href="error" routerLink="error"><i class="icon fa fa-circle-o"></i> Error Page</a></li>
-        </ul>
+
+      <!-- Nav item -->
+      <li class="nav-item">
+        <a
+          class="nav-link has-arrow collapsed"
+          href="#!"
+          data-bs-toggle="collapse"
+          data-bs-target="#navAuthentication"
+          aria-expanded="false"
+          aria-controls="navAuthentication"
+        >
+          <i data-feather="lock" class="nav-icon icon-xs me-2"> </i>
+          Authentication
+        </a>
+        <div
+          id="navAuthentication"
+          class="collapse"
+          data-bs-parent="#sideNavbar"
+        >
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="pages/sign-in.html"> Sign In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/sign-up.html"> Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/forget-password.html">
+                Forget Password
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pages/layout.html">
+          <i data-feather="sidebar" class="nav-icon icon-xs me-2"> </i>
+          Layouts
+        </a>
+      </li>
+
+      <!-- Nav item -->
+      <li class="nav-item">
+        <div class="navbar-heading">UI Components</div>
+      </li>
+
+      <!-- Nav item -->
+      <li class="nav-item">
+        <a class="nav-link has-arrow" href="docs/accordions.html">
+          <i data-feather="package" class="nav-icon icon-xs me-2"> </i>
+          Components
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          class="nav-link has-arrow collapsed"
+          href="#!"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenuLevel"
+          aria-expanded="false"
+          aria-controls="navMenuLevel"
+        >
+          <i data-feather="corner-left-down" class="nav-icon icon-xs me-2"> </i>
+          Menu Level
+        </a>
+        <div id="navMenuLevel" class="collapse" data-bs-parent="#sideNavbar">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a
+                class="nav-link has-arrow"
+                href="#!"
+                data-bs-toggle="collapse"
+                data-bs-target="#navMenuLevelSecond"
+                aria-expanded="false"
+                aria-controls="navMenuLevelSecond"
+              >
+                Two Level
+              </a>
+              <div
+                id="navMenuLevelSecond"
+                class="collapse"
+                data-bs-parent="#navMenuLevel"
+              >
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#!"> NavItem 1</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#!"> NavItem 2</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link has-arrow collapsed"
+                href="#!"
+                data-bs-toggle="collapse"
+                data-bs-target="#navMenuLevelThree"
+                aria-expanded="false"
+                aria-controls="navMenuLevelThree"
+              >
+                Three Level
+              </a>
+              <div
+                id="navMenuLevelThree"
+                class="collapse"
+                data-bs-parent="#navMenuLevel"
+              >
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link collapsed"
+                      href="#!"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#navMenuLevelThreeOne"
+                      aria-expanded="false"
+                      aria-controls="navMenuLevelThreeOne"
+                    >
+                      NavItem 1
+                    </a>
+                    <div
+                      id="navMenuLevelThreeOne"
+                      class="collapse collapse"
+                      data-bs-parent="#navMenuLevelThree"
+                    >
+                      <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#!">
+                            NavChild Item 1
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#!"> Nav Item 2</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <!-- Nav item -->
+      <li class="nav-item">
+        <div class="navbar-heading">Documentation</div>
+      </li>
+
+      <!-- Nav item -->
+      <li class="nav-item">
+        <a class="nav-link has-arrow" href="docs/index.html">
+          <i data-feather="clipboard" class="nav-icon icon-xs me-2"> </i> Docs
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link has-arrow" href="docs/changelog.html">
+          <i data-feather="git-pull-request" class="nav-icon icon-xs me-2"> </i>
+          Changelog
+        </a>
       </li>
     </ul>
-  </aside>
+  </div>
+</nav>

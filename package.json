@@ -1,5 +1,5 @@
 {
-  "name": "html-to-angular",
+  "name": "meanboilerplate",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
