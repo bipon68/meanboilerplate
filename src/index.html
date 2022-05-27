@@ -25,7 +25,9 @@
   <!-- Page specific javascripts-->
   <script type="text/javascript" src="assets/js/plugins/chart.js"></script>
   <script type="text/javascript">
-     jQuery(document).ready(function () {
+
+
+     $(function() {
       var data = {
       labels: ["January", "February", "March", "April", "May"],
       datasets: [
@@ -66,12 +68,12 @@
       }
     ]
     
-    var ctxl = $("#lineChartDemo").get(0).getContext("2d");
-    var lineChart = new Chart(ctxl).Line(data);
+    // var ctxl = $("#lineChartDemo").get(0).getContext("2d");
+    // var lineChart = new Chart(ctxl).Line(data);
     
-    var ctxp = $("#pieChartDemo").get(0).getContext("2d");
-    var pieChart = new Chart(ctxp).Pie(pdata);
-     });
+    // var ctxp = $("#pieChartDemo").get(0).getContext("2d");
+    // var pieChart = new Chart(ctxp).Pie(pdata);
+});
     
   </script>
 </body>
